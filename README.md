@@ -1,29 +1,18 @@
 # ECI-EtherCAT-Installation
 Installation of Intel IgH EtherCAT on Linux
 
-## Getting Started
+## Getting Started  
+The following steps will help you get started with using ECI in a reference setup.  
 
-The following steps will help you get started with using ECI in a reference setup.
-https://eci.intel.com/docs/3.3/getstarted.html
+1. [System Requirements](https://github.com/ShaguftaVarsi/ECI-EtherCAT-Installation/blob/main/System%20Requirements.md)
 
-1. System Requirements
+2. [Get Access to ECI]()
 
-To build ECI images or packages, you need a:
+3. [Install ECI]()
 
-    Target system
-    Linux* build system (Optional)
-    Windows* PC (Optional)
-    USB Flash Drive with a minimum 12 GB capacity (recommend USB 3.1) (Optional)
+4. [Verify Real-time Linux Kernel]()
 
-Check your system requirements :
-
-2. Get Access to ECI
-
-3. Install ECI
-
-4. Verify Real-time Linux Kernel
-
-5. Install ECI Packages from Repository - IgH EtherCAT Master Stack
+5. [Install ECI Packages from Repository - IgH EtherCAT Master Stack]()
 
 
 ## Reference
