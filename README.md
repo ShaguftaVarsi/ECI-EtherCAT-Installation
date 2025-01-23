@@ -6,7 +6,17 @@ Installation of Intel IGH EtherCAT on Linux
 The following steps will help you get started with using ECI in a reference setup.
 https://eci.intel.com/docs/3.3/getstarted.html
 
-Select each step to learn more
+1. System Requirements
+
+To build ECI images or packages, you need a:
+
+    Target system
+    Linux* build system (Optional)
+    Windows* PC (Optional)
+    USB Flash Drive with a minimum 12 GB capacity (recommend USB 3.1) (Optional)
+
+Check your system requirements :
+
 
 
 ## Reference
