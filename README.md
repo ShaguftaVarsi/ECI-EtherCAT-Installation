@@ -1,5 +1,5 @@
 # ECI-EtherCAT-Installation
-Installation of Intel IGH EtherCAT on Linux
+Installation of Intel IgH EtherCAT on Linux
 
 ## Getting Started
 
@@ -17,6 +17,13 @@ To build ECI images or packages, you need a:
 
 Check your system requirements :
 
+2. Get Access to ECI
+
+3. Install ECI
+
+4. Verify Real-time Linux Kernel
+
+5. Install ECI Packages from Repository - IgH EtherCAT Master Stack
 
 
 ## Reference
