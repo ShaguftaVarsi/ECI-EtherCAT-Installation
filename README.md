@@ -21,3 +21,7 @@ The following steps will help you get started with using ECI in a reference setu
 ## Reference
 Intel® Edge Controls for Industrial
 https://eci.intel.com/docs/3.3/index.html
+
+This is a simplified and tested document to install IgH EtherCAT Master Stack.
+
+Hope this helps!!
