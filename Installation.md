@@ -144,11 +144,36 @@ When the warning, `Warning: All data will be erased on <device> Proceed? [y/N]` 
 
 ![image](https://github.com/user-attachments/assets/733f53b2-7b0e-4dd2-8c2a-1719a81b5165)  
 
-## Configure Target System BIOS
+## Target System
 
-[](https://eci.intel.com/docs/3.3/getstarted/installation/install_generic.html#configure-target-system-bios)
+### Configure Target System BIOS
 
 To achieve real-time determinism and utilize available Intel silicon features, certain BIOS settings need to be configured. 
+
+1. Boot the target system and access the BIOS (typically pressing the `delete` or `F2` keys while booting will open the BIOS menu).
+2. Select Restore Defaults or Load Defaults and then select Save Changes and Reset. As the target system is booting, access the BIOS again (as per Step 1).
+3. Modify the BIOS configuration by visiting the [Configure Target System BIOS](https://eci.intel.com/docs/3.3/getstarted/installation/install_generic.html#configure-target-system-bios).
+
+
+### Boot and Install Image
+
+To boot and install the image, insert the bootable USB drive created earlier into the target system, and do the following:
+
+1. Power on the target system and access the BIOS.
+2. In the BIOS menu, boot the USB as the 1st Boot Option.
+3. The target system will boot from the USB drive. A boot menu will appear with a few options. Choose the install option.
+
+![image](https://github.com/user-attachments/assets/b3ca4177-4206-453e-ad69-6ad1458edbfc)  
+
+4. The target system will begin the installation process. During the installation, you will be prompted to: `Please select an install target or press n to exit`. Enter an available install target (make sure that the target is correct). For example, enter sdb.
+5. If you see the prompt: `/dev/sdb# contains a ext4 file system … Proceed anyway? (y,N)` , press **y** to continue.
+6. After the installation is complete, remove the USB drive and press **Enter**, on the keyboard, to reboot the target system.
+7. Let the target system boot completely. Select `boot` from the GRUB menu (this option will automatically be selected after 5 seconds).
+
+![image](https://github.com/user-attachments/assets/8ee9597f-fa02-420b-841e-7af26b3b0899)
+
+8. A login prompt will eventually appear. Login with user `root` and password `root`.  
+
 
 
 
