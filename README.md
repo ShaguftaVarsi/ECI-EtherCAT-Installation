@@ -1,5 +1,8 @@
 # ECI-EtherCAT-Installation
-Installation of Intel IgH EtherCAT on Linux
+Installation of Intel IgH EtherCAT on Linux  
+
+> [!NOTE]
+> Version: 3.3 
 
 ## Getting Started  
 The following steps will help you get started with using ECI in a reference setup.  
