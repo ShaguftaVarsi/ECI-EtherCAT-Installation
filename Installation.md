@@ -58,6 +58,7 @@ The directory contents should be similar to the following:
 
 
 ![image](https://github.com/user-attachments/assets/2b153bf7-4bce-4421-a7e3-7ab387161fc8)  
+
 The script will display the build dependencies, if any. When prompted, press the **Enter** or **Y** key to install any missing dependencies.
 
 The script will notify the issues, if any. The following are some of the common issues. Click the links for resolutions:
@@ -71,6 +72,7 @@ The script will then prepare a container image. This container image will be use
 
 
 ![image](https://github.com/user-attachments/assets/d7e974dc-aa4b-4695-be50-e0299f68f689)  
+
 After the dependencies are installed and prepared, you will see a confirmation message that the dependency check is complete.
 
 ![image](https://github.com/user-attachments/assets/5fb31863-8b5d-4d9d-b7c5-615042b1955c)  
@@ -96,6 +98,7 @@ The setup script will begin configuring the assets needed to build the target im
 
 
 ![image](https://github.com/user-attachments/assets/5a0fed1b-39d2-4857-bcb1-4081b65a66e8)  
+
 If the setup script is not building the target for the first time, the script will prompt: `Build directory <target> already exists. Do you want to clean the cached build? [y/N]`.  
 Common [Errors](https://eci.intel.com/docs/3.3/getstarted/building/notifications_build.html).
 
@@ -108,6 +111,55 @@ The build typically takes a long time. A Linux build system with the recommended
 
 
 ![image](https://github.com/user-attachments/assets/6720475c-4139-4d64-ae15-9d82b44d6eb4)
+
+After the build completes, next create a bootable USB flash drive to install the `core-noble` image.  
+## Create Bootable USB  
+>[!TIP]
+> Continue the following steps in the same terminal.
+
+Do the following to create a bootable USB, which you will later use to build and install the ECI image:  
+1. Insert a USB drive with at least 12 GB capacity into the Linux build system.
+2. At the terminal prompt, run the `create_bootable_usb.sh` script:
+
+        $ ./create_bootable_usb.sh
+
+If the message “_Please run as root_” appears, run the script again with sudo:
+
+        $ sudo ./create_bootable_usb.sh
+
+![image](https://github.com/user-attachments/assets/9bff454b-20af-4edf-a855-024b0666caf8)  
+
+3. The script will display a list of available ECI images. Enter an image name from the list. In this example, `core-bookworm` was entered.
+
+![image](https://github.com/user-attachments/assets/d0c5733b-1079-425f-aee7-3cea9646ecf6)  
+
+4. The script will display a list of available removable mass storage devices.
+Enter the name of a device from the displayed list. In this example, the device name displayed is `sda`.
+
+![image](https://github.com/user-attachments/assets/806a78e6-6405-449b-8e86-044919eb3bca)
+
+When the warning, `Warning: All data will be erased on <device> Proceed? [y/N]` is displayed, enter **y** to proceed. The target ECI image will be written to the removable mass storage device.  
+
+5. After the script completes, you will have a bootable USB drive that can install the target ECI image. You may eject the USB drive from the Linux build system. You will use this USB drive to boot and install the image.
+
+![image](https://github.com/user-attachments/assets/733f53b2-7b0e-4dd2-8c2a-1719a81b5165)  
+
+## Configure Target System BIOS
+
+[](https://eci.intel.com/docs/3.3/getstarted/installation/install_generic.html#configure-target-system-bios)
+
+To achieve real-time determinism and utilize available Intel silicon features, certain BIOS settings need to be configured. 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
