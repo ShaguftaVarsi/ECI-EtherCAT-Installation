@@ -174,6 +174,21 @@ To boot and install the image, insert the bootable USB drive created earlier int
 
 8. A login prompt will eventually appear. Login with user `root` and password `root`.  
 
+## Setup ECI Repository
+
+This option is recommended for new users of ECI. This will setup the public ECI repository from which ECI packages can be readily installed onto a target system.
+
+1. After registering on Intel® Edge Software Hub, access the download page on the ECI portal. Sign in to your account if needed.
+2. After signing in, you should see the Edge Controls for Industrial page with options to get ECI. You can setup the ECI Repository.
+3. Click the “Review License Agreement” button to review and accept the license agreement.
+4. Select ECI APT repository link. Then, select Ubuntu ##.# LTS as the Target System OS. After selecting the Version and Target System OS, you will see a box with a link. This link provides instructions for setting up the ECI repository.
+5. Copy the link and paste it on your web browser. A page titled Setup ECI APT/DNF Repository will appear. Complete the steps on that page.
+
+![image](https://github.com/user-attachments/assets/1aba861b-3efc-4bee-8003-ee4b55b9f9ef)
+
+Now you’re ready to install [ECI packages]().
+
+
 
 
 
