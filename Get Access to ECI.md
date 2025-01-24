@@ -36,7 +36,7 @@ you can also download ECI as a release archive. This archive contains the follow
 ### Download ECI Release Archive
 
 1. Click the “Review License Agreement” button to review and accept the license agreement.
-2. Select one of the Release-#.# buttons. Then, select either Debian ## or Ubuntu ##.## LTS as the Target System OS. After selecting the Version and Target System OS, you will see a box with a link. This is a direct link to the ECI release archive.
+2. Select one of the Release-#.# buttons. Then, select Ubuntu ##.## LTS as the Target System OS. After selecting the Version and Target System OS, you will see a box with a link. This is a direct link to the ECI release archive.
 3. Copy the link and paste it in your web browser. The ECI release archive should begin to download.
 
 
