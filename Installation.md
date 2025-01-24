@@ -178,15 +178,15 @@ To boot and install the image, insert the bootable USB drive created earlier int
 
 This option is recommended for new users of ECI. This will setup the public ECI repository from which ECI packages can be readily installed onto a target system.
 
-1. After registering on Intel® Edge Software Hub, access the download page on the ECI portal. Sign in to your account if needed.
-2. After signing in, you should see the Edge Controls for Industrial page with options to get ECI. You can setup the ECI Repository.
-3. Click the “Review License Agreement” button to review and accept the license agreement.
-4. Select ECI APT repository link. Then, select Ubuntu ##.# LTS as the Target System OS. After selecting the Version and Target System OS, you will see a box with a link. This link provides instructions for setting up the ECI repository.
-5. Copy the link and paste it on your web browser. A page titled Setup ECI APT/DNF Repository will appear. Complete the steps on that page.
+1. After registering on Intel® Edge Software Hub, access the download page on the [ECI portal](https://www.intel.com/content/www/us/en/developer/topic-technology/edge-5g/edge-solutions/controls-for-industrial.html). Sign in to your account if needed.
+3. After signing in, you should see the Edge Controls for Industrial page with options to get ECI. You can setup the ECI Repository.
+4. Click the “Review License Agreement” button to review and accept the license agreement.
+5. Select ECI APT repository link. Then, select Ubuntu ##.# LTS as the Target System OS. After selecting the Version and Target System OS, you will see a box with a link. This link provides instructions for setting up the ECI repository.
+6. Copy the link and paste it on your web browser. A page titled Setup ECI APT/DNF Repository will appear. Complete the steps on that page.
 
 ![image](https://github.com/user-attachments/assets/1aba861b-3efc-4bee-8003-ee4b55b9f9ef)
 
-Now you’re ready to install [ECI packages]().
+Now you’re ready to install [EtherCAT package](https://github.com/ShaguftaVarsi/ECI-EtherCAT-Installation/blob/main/Installation%20of%20EtherCAT.md).
 
 
 
