@@ -41,7 +41,7 @@ Use your preferred method to extract the zip archive. If you’re using a Linux 
 
 ### What Next after Downloading ECI Release Archive
 
-After downloading the ECI release archive, you’re ready to [build ECI].
+After downloading the ECI release archive, you’re ready to [build ECI](https://github.com/ShaguftaVarsi/ECI-EtherCAT-Installation/blob/main/Installation.md).
 
 
 
