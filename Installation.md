@@ -18,7 +18,8 @@ Verify that the installation is successful by running the hello-world image:
     $ sudo docker run hello-world
 
 > [!NOTE]
-> Manage Docker as a non-root user:  
+> Manage Docker as a non-root user:   
+
 Create the docker group.
 
      $ sudo groupadd docker
@@ -69,6 +70,44 @@ The script will notify the issues, if any. The following are some of the common 
 The script will then prepare a container image. This container image will be used whenever you build ECI images or Deb packages.
 
 
+![image](https://github.com/user-attachments/assets/d7e974dc-aa4b-4695-be50-e0299f68f689)  
+After the dependencies are installed and prepared, you will see a confirmation message that the dependency check is complete.
+
+![image](https://github.com/user-attachments/assets/5fb31863-8b5d-4d9d-b7c5-615042b1955c)  
+
+At this point, the setup script will exit.
+
+>[!TIP]
+> Continue the following steps in the same terminal.
+
+### Build ECI Targets
+
+1. Rerun the setup script without any parameters:
+
+       $ ./setup.sh
+
+2. A menu will display the available ECI targets. Select an ECI target to build.
+
+![image](https://github.com/user-attachments/assets/f9424a90-9aa0-482d-bc5f-92fda3ef2811)
+
+3. The next step is to build a target. Click a target link from the list for to start building the target:  
+In our case it is Ubuntu Nobel-Numbat. Select `core-nobel`.
+The setup script will begin configuring the assets needed to build the target image. Depending on the state of the build environment, a few notifications may occur.  
+
+
+![image](https://github.com/user-attachments/assets/5a0fed1b-39d2-4857-bcb1-4081b65a66e8)  
+If the setup script is not building the target for the first time, the script will prompt: `Build directory <target> already exists. Do you want to clean the cached build? [y/N]`.  
+Common [Errors](https://eci.intel.com/docs/3.3/getstarted/building/notifications_build.html).
+
+After setting up the build target, the script will prompt: `Do you want to run an automated build? [Y/n].`  
+To perform an automated build, press **y** at the prompt.  
+
+![image](https://github.com/user-attachments/assets/df176957-3d93-4bca-b1b1-d0ea7f2b3a38)
+
+The build typically takes a long time. A Linux build system with the recommended specifications might take about 30 minutes to an hour to complete. A Linux build system with the minimum specifications might take over two hours to complete. Refer to Linux build system for the recommended specifications.  
+
+
+![image](https://github.com/user-attachments/assets/6720475c-4139-4d64-ae15-9d82b44d6eb4)
 
 
 
