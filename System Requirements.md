@@ -33,3 +33,4 @@ Software Requirements:
 
     Docker engine (version 19.03.15 or higher).
 
+If your systems satisfy the system requirements, next go to [Getting Access to ECI](https://github.com/ShaguftaVarsi/ECI-EtherCAT-Installation/blob/main/Get%20Access%20to%20ECI.md).
